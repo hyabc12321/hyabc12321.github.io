@@ -47,7 +47,6 @@
 
 /* Content */
 .container .content{}
-.lowercase {text-transform: lowercase;}
 
 .headerBGD{height:36px;}
 .headerBGD h1{padding-top: 7px; padding-left: 10px; font-family: "Palatino"; text-transform: none;}
@@ -340,7 +339,7 @@ table a, #comments a{background-color:inherit;}
 
 
 /* Mobile Devices
---------------------------------------------------------------------------------------------------------------- */
+--------------------------------------------------------------------------------------------------------------- 
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
 
@@ -373,7 +372,7 @@ table a, #comments a{background-color:inherit;}
 	#header{text-align:center;}
 	#header #logo{margin:0 0 15px 0;}
 }
-
+*/
 
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
