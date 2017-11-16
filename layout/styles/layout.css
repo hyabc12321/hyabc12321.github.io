@@ -12,14 +12,7 @@
 .row4, .row4 a{}
 .row5{border-top:0px solid; font-family: "Helevatica"}
 
-.row5 .imgr {
-  width: 45px;
-  height: 22px;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0;
-}
+
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro .box{padding-top:75px; padding-bottom:10px;}
@@ -27,7 +20,7 @@
 #pageintro article{}
 #pageintro article .heading{margin-bottom:0px; font-size:40px;font-family: "Palatino"; text-transform: none;}
 #pageintro article .caption{margin-bottom:0px; font-size:14px;font-family: "Helevatica"; text-transform: none; line-height: 1.5;}
-#pageintro article .flag2{max-width: 1200px; width: 30%; margin:0 0 0 0;}
+#pageintro article .flag2{width: 30%; margin:0 0 0 0;}
 #pageintro article .flag{width: 56%; margin:20px 0 0 0;}
 #pageintro article p{font-size:16px;}
 #pageintro article footer{margin-top:50px;}
@@ -43,7 +36,7 @@
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:40px 0;}
+.container{padding:10px 0;}
 
 /* Content */
 .container .content{}
@@ -137,12 +130,8 @@
 #mainav form *{transition:none !important;}
 
 
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-
+.shackhandicon{width: 45px; height: 22px; position: relative; display: inline-block; overflow: hidden; margin: 0;}
+.imgl, .imgr{display:inline-block; float:none; margin: 25px 0 0px 0;}
 
 /* Navigation
 --------------------------------------------------------------------------------------------------------------- */
@@ -157,7 +146,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav ul{margin: 0px; padding: 0px; list-style: none;}
 #mainav ul ul{z-index:9999; position:absolute; width:200px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
-#mainav li{display:inline-block; width: 175px; font-family:"Palatino"; font-size: 20px; letter-spacing: 1px; text-align: center; position:relative; margin:0 20px 0 0; padding:0;}
+#mainav li{display:inline-block; width: 24%; font-family:"Palatino"; font-size: 20px; letter-spacing: 1px; text-align: center; position:relative;}
 #mainav li:first-child{margin-left: 0px;}
 #mainav li:last-child{margin-right:0;}
 #mainav li li{width:100%; margin:0;}
@@ -339,7 +328,7 @@ table a, #comments a{background-color:inherit;}
 
 
 /* Mobile Devices
---------------------------------------------------------------------------------------------------------------- 
+--------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:900px){
 	.hoc{max-width:90%;}
 
@@ -364,15 +353,15 @@ table a, #comments a{background-color:inherit;}
 
 
 @media screen and (max-width:750px){
-	.imgl, .imgr{display:inline-block; float:none; margin:1000px 0 10px 0;}
+	.imgl, .imgr{display:inline-block; float:none; margin: 0px 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.fl_center{display:block; float:left; width: auto; height: 40;}
-	.one_half, .one_third, .two_third, .one_quarter, .three_quarter, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	.one_half, .one_third, .two_third,.one_quarter, .two_quarter, .three_quarter, .one_fourth, .two_fourth, .three_fourth{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
 	#header{text-align:center;}
 	#header #logo{margin:0 0 15px 0;}
 }
-*/
+
 
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
@@ -389,5 +378,7 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 
-	#pageintro .box{padding:100px 5%;}
+	#pageintro .box{padding:50px 5%;}
+	#pageintro article .flag{width: 80%; margin:20px 0 0 0;}
+	#pageintro article .flag2{width: 50%; margin:20px 0 0 0;}
 }
