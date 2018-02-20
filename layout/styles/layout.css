@@ -28,7 +28,7 @@
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header
+#header{}
 /*#header{height: 40px;}*/
 #header #logo{margin:29px 0 0 0;}
 #header #logo h1{margin:0; padding:0; font-size:22px; line-height:1; text-transform:none;}
@@ -335,8 +335,6 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:978px){
 	.hoc{max-width:90%;}
-	.hoc.split{max-width:none; width:100%;}
-	.split .box, .split .box.left{float:none; width:100%; padding:5%;}
 
 	#header{padding:30px 0;}
 	#header #logo{margin:7px 0 0 0;}
@@ -360,7 +358,7 @@ table a, #comments a{background-color:inherit;}
 	.row1{display: none;}
 
 	#breadcrumb{}
-
+	#pageintro .box{padding:50px 5%;}
 	.container{}
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
@@ -374,9 +372,6 @@ table a, #comments a{background-color:inherit;}
 
 
 @media screen and (max-width:750px){
-	.hoc.split{max-width:none; width:100%;}
-	.split .box, .split .box.left{float:none; width:100%; padding:5%;}
-
 	/* Mobile Navigation */
 	.burgernav{
 		display: block;
@@ -401,7 +396,7 @@ table a, #comments a{background-color:inherit;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.fl_center{display:block; float:center; width: auto; height: 40;}
 	.one_half, .one_third, .two_third,.one_quarter, .two_quarter, .three_quarter, .one_fourth, .two_fourth, .three_fourth{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
-
+	#pageintro .box{padding:50px 5%;}
 	#header{text-align:center;}
 	#header #logo{margin:0 0 15px 0;}
 	#copyright *{margin: auto;}
