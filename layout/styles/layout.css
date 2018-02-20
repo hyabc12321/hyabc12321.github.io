@@ -1,31 +1,27 @@
 @charset "utf-8";
-/*
-Template Name: Epigosha
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
-File: Layout CSS
-*/
+
 
 @import url("fontawesome-4.5.0.min.css");
 @import url("framework.css");
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
-.row1{border-bottom:1px solid;}
+.row1{border-bottom: 20px solid;}
 .row2, .row2 a{}
 .row3, .row3 a{}
 .row4, .row4 a{}
-.row5{border-top:1px solid;}
+.row5{}
 
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro .box{padding-top:150px; padding-bottom:150px;}
+#pageintro .box{padding-top:75px; padding-bottom:10px;}
 
 #pageintro article{}
-#pageintro article .heading{margin-bottom:30px; font-size:36px;}
+#pageintro article .heading{margin-bottom:0px; font-size:40px;font-family: "Palatino"; text-transform: none;}
+#pageintro article .caption{margin-bottom:0px; font-size:14px;font-family: "Helevatica"; text-transform: none; line-height: 1.5;}
+#pageintro article .flag2{width: 30%; margin:0 0 0 0;}
+#pageintro article .flag{width: 56%; margin:20px 0 0 0;}
 #pageintro article p{font-size:16px;}
 #pageintro article footer{margin-top:50px;}
 
@@ -33,18 +29,21 @@ File: Layout CSS
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
 #header{}
-
+/*#header{height: 40px;}*/
 #header #logo{margin:29px 0 0 0;}
-#header #logo h1{margin:0; padding:0; font-size:22px; line-height:1; text-transform:uppercase;}
+#header #logo h1{margin:0; padding:0; font-size:22px; line-height:1; text-transform:none;}
 
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+.container{padding:10px 0;}
 
 /* Content */
 .container .content{}
 
+.headerBGD{height:36px;}
+.headerBGD h1{padding-top: 7px; padding-left: 10px; font-family: "Palatino"; text-transform: none;}
+.emptygrid {}
 #stats{text-align:center;}
 #stats li *{margin:0; padding:0;}
 #stats li:last-child{margin-bottom:0;}/* Used in mobile devices when elements stack */
@@ -122,40 +121,36 @@ File: Layout CSS
 
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
-#copyright{padding:30px 0;}
+#copyright{padding:15px 0;}
 #copyright *{margin:0; padding:0;}
-
-
+#cooperation{border-top:0px solid; font-family: "Helevatica"; float: left; text-align: left;}
 /* Transition Fade
 --------------------------------------------------------------------------------------------------------------- */
 *, *::before, *::after{transition:all .3s ease-in-out;}
 #mainav form *{transition:none !important;}
 
 
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------------ */
-
+.shackhandicon{height: 20px; width: auto; float: right;}
+.imgl, .imgr{display:inline-block; float:none; margin: 25px 0 0px 0;}
 
 /* Navigation
 --------------------------------------------------------------------------------------------------------------- */
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
-#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
-
+#mainav, #breadcrumb, .sidebar nav{line-height: normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"Palatino"; font-size:10px; line-height:10px;}
+ 
 /* Top Navigation */
 #mainav{}
 #mainav ul.clear{}
-#mainav ul{text-transform:uppercase;}
-#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul{margin: 0px; padding: 0px; list-style: none;}
+#mainav ul ul{z-index:9999; position:absolute; width:200px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
-#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li{display:inline-block; width: 24%; font-family:"Palatino"; font-size: 20px; letter-spacing: 1px; text-align: center; position:relative;}
+#mainav li:first-child{margin-left: 0px;}
 #mainav li:last-child{margin-right:0;}
 #mainav li li{width:100%; margin:0;}
-#mainav li a{display:block; padding:30px 0;}
+#mainav li a{display:block; padding:15px 0;}
 #mainav li li a{border:solid; border-width:0 0 1px 0;}
 #mainav .drop{padding-left:15px;}
 #mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
@@ -164,6 +159,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav li li .drop::after{top:15px; left:5px;}
 #mainav ul ul{visibility:hidden; opacity:0;}
 #mainav ul li:hover > ul{visibility:visible; opacity:1;}
+/*#mainav ul li{float:left; width: 200; height: 40;}*/
 
 #mainav form{display:none; margin:0; padding:0;}
 #mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
@@ -201,6 +197,9 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #backtotop.visible{visibility:visible; opacity:.5;}
 #backtotop:hover{opacity:1;}
 
+.google_maps {position: relative; padding-bottom: 75%; height: 0; overflow: hidden;}
+.google_maps iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
 
 /* Tables
 --------------------------------------------------------------------------------------------------------------- */
@@ -221,20 +220,20 @@ td{border-width:0 1px;}
 /* Font Awesome Social Icons
 --------------------------------------------------------------------------------------------------------------- */
 .faico{margin:0; padding:0; list-style:none;}
-.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li{display:inline-block; margin:10px 5px 20px 0; padding:0; line-height:normal;}
 .faico li:last-child{margin-right:0;}
-.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+.faico a{display:inline-block; width:0px; height:0px; line-height:normal; font-size:30px; text-align:center;}
 
-.faico a{color:#050505; background-color:#0F84AA;}
-.faico a:hover{color:#FFFFFF;}
+.faico a{color:#3B5998; background-color:#FFFFFF;}
+/*.faico a:hover{color:#3B5998;}
 
 .faicon-dribble:hover{background-color:#EA4C89;}
-.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-facebook:hover{color:#3B5998;background-color:#FFFFFF;}
 .faicon-google-plus:hover{background-color:#DB4A39;}
 .faicon-linkedin:hover{background-color:#0E76A8;}
 .faicon-twitter:hover{background-color:#00ACEE;}
 .faicon-vk:hover{background-color:#4E658E;}
-
+*/
 
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -259,15 +258,15 @@ input:focus, textarea:focus, *:required:focus{border-color:#0F84AA;}
 
 .split .box, .split .box::after{color:#9B9B9B; background-color:rgba(35,35,35,.8);/* #232323 */}
 .split .box.bg-light, .split .box.bg-light::after{color:#232323; background-color:rgba(250,250,250,.85);/* #FAFAFA */}
-.split .box.bg-coloured, .split .box.bg-coloured::after{color:#FFFFFF; background-color:rgba(15,132,170,.65);/* #0F84AA */}
+.split .box.bg-coloured, .split .box.bg-coloured::after{color:#FFFFFF; background-color:rgba(23,121,102,.65);/* #177966 */}
 
 
 /* Rows */
-.row1{color:#232323; background-color:#FAFAFA; border-color:#EBEBEB;}
+.row1{color:#FFFFFF; background-color:#747474;}
 .row2{color:#232323; background-color:#EBEBEB;}
 .row3{color:#232323; background-color:#FFFFFF;}
 .row4{color:#9B9B9B; background-color:#232323;}
-.row5, .row5 a{color:#9B9B9B; background-color:#232323;}
+.row5, .row5 a{color:#FFFFFF; background-color:#464646;}
 .row5{border-color:#404040;}
 
 
@@ -277,7 +276,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#0F84AA;}
 
 /* Content Area */
 .latest figure figcaption{color:#FFFFFF; background-color:rgba(0,0,0,.2); border-color:#FFFFFF;}
-
+.headerBGD{color:#FFFFFF; background-color:#747474;}
 
 /* Footer */
 #footer .title{color:#FFFFFF;}
@@ -286,7 +285,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#0F84AA;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#0F84AA; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:inherit; background-color:#177966;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#0F84AA;}
 #mainav form select{color:#232323; background-color:#EBEBEB;}
@@ -328,20 +327,35 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px){
 	.hoc{max-width:978px;}
+	#mobilnav{display: none;}
 }
 
 
 /* Mobile Devices
 --------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:900px){
+@media screen and (max-width:978px){
 	.hoc{max-width:90%;}
 
 	#header{padding:30px 0;}
 	#header #logo{margin:7px 0 0 0;}
+	
+	.burgernav{
+		display: block;
+		height: 40px;
+		width: 100%;
+		background: url(burgernavicon.png) no-repeat 2% center;
+		background-size: 8%;
+		background-color: #747474; 
+		cursor: pointer;
+	}
+	#mobilnav nav{line-height: normal;}
+	#mobilnav ul.clear{}
+	#mobilnav ul{overflow: hidden; background: #5A5A5A; height:0;}
+	#mobilnav ul.open{height: auto;}
+	#mobilnav ul li{font-family:"Palatino"; float: none; text-align: left; width: 100%; margin: 0;}
+	#mobilnav ul li a{color:#FFFFFF; padding: 10px; border-bottom: 1px solid #404040; display: block; margin: 0;}
 
-	#mainav{}
-	#mainav ul{display:none;}
-	#mainav form{display:block;}
+	.row1{display: none;}
 
 	#breadcrumb{}
 
@@ -350,19 +364,49 @@ table a, #comments a{background-color:inherit;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
 	#footer{}
-
+	
 	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
+
+	
 }
 
 
 @media screen and (max-width:750px){
-	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	/* Mobile Navigation */
+	.burgernav{
+		display: block;
+		height: 40px;
+		width: 100%;
+		background: url(burgernavicon.png) no-repeat 2% center;
+		background-size: 16%;
+		background-color: #747474; 
+		cursor: pointer;
+	}
+	#mobilnav nav{line-height: normal;}
+	#mobilnav ul.clear{}
+	#mobilnav ul{overflow: hidden; background: #5A5A5A; height:0;}
+	#mobilnav ul.open{height: auto;}
+	#mobilnav ul li{float: none; text-align: left; width: 100%; margin: 0;}
+	#mobilnav ul li a{font-family:"Palatino"; color:#FFFFFF; padding: 10px; border-bottom: 1px solid #404040; display: block; margin: 0;}
+	.faico li{display:inline-block; margin:0px 5px 0px 0; padding:0; line-height:normal;}
+	.google_maps {display: none;}
+	.row1{display: none;}
+	.emptygrid{height: 0;}
+	.imgl, .imgr{display:inline-block; float:none; margin: 0px 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	.fl_center{display:block; float:center; width: auto; height: 40;}
+	.one_half, .one_third, .two_third,.one_quarter, .two_quarter, .three_quarter, .one_fourth, .two_fourth, .three_fourth{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	
+	.hoc.split{max-width:none; width:100%;}
+	.split .box, .split .box.left{float:none; width:100%; padding:5%;}
+	#pageintro .box{padding:50px 5%;}
 
 	#header{text-align:center;}
 	#header #logo{margin:0 0 15px 0;}
+	#copyright *{margin: auto;}
+	#cooperation{border-top:0px solid; font-family: "Helevatica"; margin: auto; text-align: center;}
+	.shackhandicon{display: block; width: 20%; height: auto; margin: 0 auto 0; float: none;}
 }
 
 
@@ -381,5 +425,7 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 
-	#pageintro .box{padding:100px 5%;}
+	#pageintro .box{padding:50px 5%;}
+	#pageintro article .flag{width: 80%; margin:20px 0 0 0;}
+	#pageintro article .flag2{width: 50%; margin:20px 0 0 0;}
 }
