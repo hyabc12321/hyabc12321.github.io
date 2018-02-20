@@ -28,7 +28,7 @@
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{}
+#header
 /*#header{height: 40px;}*/
 #header #logo{margin:29px 0 0 0;}
 #header #logo h1{margin:0; padding:0; font-size:22px; line-height:1; text-transform:none;}
