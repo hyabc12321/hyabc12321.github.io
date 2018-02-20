@@ -419,7 +419,7 @@ table a, #comments a{background-color:inherit;}
 	.inline li{display:block; margin-bottom:10px;}
 	.pushright li{margin-right:0;}
 
-	.hoc.split{max-width:none; width:100%;}
+	.hoc.split{ width:100%;}
 	.split .box, .split .box.left{float:none; width:100%; padding:5%;}
 
 	.font-x2{font-size:1.4rem;}
